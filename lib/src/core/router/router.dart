@@ -18,13 +18,13 @@ final goRouterProvider = Provider(
   (ref) {
     return GoRouter(
       navigatorKey: rootNavigatorKey,
-      initialLocation:HomeScreen.route,
+      initialLocation:AuthScreen.route,
       observers: [BotToastNavigatorObserver()],
       routes: [
         GoRoute(
-          path: SplashScreen.route,
+          path: AuthScreen.route,
           builder: (context, state) {
-            return const SplashScreen();
+            return const AuthScreen();
           },
         ),
         GoRoute(
