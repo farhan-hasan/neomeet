@@ -52,6 +52,14 @@ class BottomNavScreen extends StatelessWidget {
               label: "Home",
             ),
             BottomNavigationBarItem(
+              icon: Icon(Icons.schedule),
+              label: "Schedule",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.search),
+              label: "Search",
+            ),
+            BottomNavigationBarItem(
               icon: Icon(Icons.person),
               label: "Profile",
             ),

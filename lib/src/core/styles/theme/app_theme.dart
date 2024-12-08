@@ -40,23 +40,24 @@ final ThemeData lightTheme = ThemeData(
   textTheme: _buildLightTextTheme(),
   bottomNavigationBarTheme: const BottomNavigationBarThemeData(
     elevation: 10,
-    backgroundColor: Colors.white, // Background color of the nav bar
-    selectedItemColor: Colors.black, // Color of the selected icon and label
-    unselectedItemColor: Colors.grey, // Color of unselected items
-    selectedLabelStyle: TextStyle(
-        fontSize: 14,
-        fontFamily: "Circular Std"), // Font size of the selected label
-    unselectedLabelStyle: TextStyle(
-        fontSize: 12,
-        fontFamily: "Circular Std"), // Font size of the unselected label
+    backgroundColor: Colors.white,
+    // Background color of the nav bar
+    selectedItemColor: Colors.black,
+    // Color of the selected icon and label
+    unselectedItemColor: Colors.grey,
+    // Color of unselected items
+    selectedLabelStyle: TextStyle(fontSize: 14, fontFamily: "Circular Std"),
+    // Font size of the selected label
+    unselectedLabelStyle: TextStyle(fontSize: 12, fontFamily: "Circular Std"),
+    // Font size of the unselected label
     type: BottomNavigationBarType
         .fixed, // Set it to fixed to avoid shifting behavior
   ),
   iconButtonTheme: IconButtonThemeData(
     style: IconButton.styleFrom(
       /// Markdown -> Commented BG Color of ICON
-      backgroundColor: Colors.black,
-      foregroundColor: Colors.white,
+      //backgroundColor: Colors.black,
+      //foregroundColor: Colors.white,
       padding: const EdgeInsets.all(2),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
       //minimumSize: Size(context.width * 0.8, context.width * 0.15),
@@ -103,15 +104,16 @@ final ThemeData darkTheme = ThemeData(
   textTheme: _buildDarkTextTheme(),
   bottomNavigationBarTheme: const BottomNavigationBarThemeData(
     elevation: 10,
-    backgroundColor: Color(0xFF121212), // Background color of the nav bar
-    selectedItemColor: Colors.white, // Color of the selected icon and label
-    unselectedItemColor: Colors.grey, // Color of unselected items
-    selectedLabelStyle: TextStyle(
-        fontSize: 14,
-        fontFamily: "Circular Std"), // Font size of the selected label
-    unselectedLabelStyle: TextStyle(
-        fontSize: 12,
-        fontFamily: "Circular Std"), // Font size of the unselected label
+    backgroundColor: Color(0xFF121212),
+    // Background color of the nav bar
+    selectedItemColor: Colors.white,
+    // Color of the selected icon and label
+    unselectedItemColor: Colors.grey,
+    // Color of unselected items
+    selectedLabelStyle: TextStyle(fontSize: 14, fontFamily: "Circular Std"),
+    // Font size of the selected label
+    unselectedLabelStyle: TextStyle(fontSize: 12, fontFamily: "Circular Std"),
+    // Font size of the unselected label
     type: BottomNavigationBarType
         .fixed, // Set it to fixed to avoid shifting behavior
   ),

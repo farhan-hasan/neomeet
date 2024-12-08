@@ -19,21 +19,18 @@ class CustomFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
-      child: SizedBox(
-        height: context.height * 0.08,
-        child: TextFormField(
-          controller: controller,
-          decoration: InputDecoration(
-            labelText: labelText,
-            helperText: helperText,
-            // prefixIcon: IconButton(onPressed: onPressed, icon: icon),
-            contentPadding: const EdgeInsets.symmetric(vertical: 10),
-          ),
-          obscureText: obscureText,
-          validator: validator,
+    return SizedBox(
+      height: context.height * 0.08,
+      child: TextFormField(
+        controller: controller,
+        decoration: InputDecoration(
+          labelText: labelText,
+          helperText: helperText,
+          // prefixIcon: IconButton(onPressed: onPressed, icon: icon),
+          border: OutlineInputBorder(),
         ),
+        obscureText: obscureText,
+        validator: validator,
       ),
     );
   }

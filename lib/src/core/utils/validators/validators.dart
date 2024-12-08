@@ -17,8 +17,14 @@ class Validators {
   static String? passwordValidator(String? password) {
     if (password!.isEmpty) {
       return "Enter Password";
-    } else if (!passwordRegex.hasMatch(password)) {
-      return "Invalid Password";
+    } else {
+      return null;
+    }
+  }
+
+  static String? validator(String? value) {
+    if (value!.isEmpty) {
+      return "Enter a value";
     } else {
       return null;
     }
